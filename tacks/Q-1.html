@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr-1</title>
+</head>
+<center>
+    <table border="1" cellpading="15" width="50%" text-aling="center">
+        <tr>
+            <td>A + B</td>
+            <td id="a"></td>
+        </tr>
+        <tr>
+            <td>A - B</td>
+            <td id="b"></td>
+        </tr>
+        <tr>
+            <td>A * B</td>
+            <td id="c"></td>
+        </tr>
+        <tr>
+            <td>A / B</td>
+            <td id="d"></td>
+        </tr>
+    </table>
+</center>
+
+<body>
+
+    <script type="text/javascript">
+
+        let a = parseInt(prompt("Enter a number A :-"));
+        let b = parseInt(prompt("Enter a number B :-"));
+
+        document.getElementById("a").innerHTML = a + b
+        document.getElementById("b").innerHTML = a - b
+        document.getElementById("c").innerHTML = a * b
+        document.getElementById("d").innerHTML = a / b
+    </script>
+</body>
+
+</html>
