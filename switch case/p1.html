@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade</title>
+</head>
+
+<body>
+    <script>
+        let Marks = parseInt(prompt("Enter the Marks of Student:"));
+
+        switch(Marks){
+
+        case 1:
+            (Marks <= 32)
+            document.write("You are fail.");
+            break;
+
+        case 2:
+            (Marks >= 33 && Marks <= 39)
+            document.write("Good..You get D grade");
+            break;
+       
+        case 3:
+            (Marks >= 40 && Marks <= 60)
+            document.write("Very Good..You get C grade");
+            break;
+
+        case 4:
+            (Marks >= 61 && Marks <= 80)
+            document.write("Excellent..You get B grade");
+            break;
+        case 5:
+            (Marks >= 81 && Marks <= 100) 
+            document.write("Outstanding..You get A grade");
+            break;
+
+        default:
+        document.write("Invalid input. Please enter marks between 0 and 100.");
+        }
+    </script>
+</body>
+
+</html>

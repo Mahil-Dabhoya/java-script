@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+document.write("Welcome to Traffic System :-");
+document.write("1.Red Light");
+document.write("2.Green Light");
+document.write("3.Yellow Light");
+
+        let choice = (parseInt(prompt("Enter Your Choice For Traffic Signels :  ")));
+
+        switch (choice) {
+
+            case 1:
+            document.write("You Have Choose Red Light....");
+            document.write("NOW..ITS Danger! Stop.");
+                break;
+
+            case 2:
+            document.write("You Have Choose Yellow Light....");
+            document.write(" so be Prepare to stop.");
+                break;
+
+            case 3:
+            document.write("You Have Choose Green Light....");
+            document.write("so.. Go ahead!");
+                break;
+
+            default:
+            document.write("Invalid traffic signal.");
+
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Eligible </title>
+</head>
+<body>
+    <script>
+        
+        let a = (parseInt(prompt("Enter Your Age : ")));
+        
+        switch(true){
+        case  (a <= 0):
+           
+            document.write("Please enter a valid number.");
+            breack;
+
+        case  (a <=18 ):
+           
+             document.write("You are child...");
+            breack;
+        
+        case  (a <=25):
+           
+            document.write("You are teneger...");
+            breack;
+
+         
+        case   (25 <=50):
+          
+            document.write("You are younger...");
+            breack;
+        
+        case (51<= 70):
+            
+            document.write("You are older...");
+            breack;
+        
+      default:
+
+            document.write("enter a valid age...");
+
+           
+        }
+      
+      
+    </script>
+
+</body>
+</html>
