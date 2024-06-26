@@ -1,0 +1,72 @@
+<script type="text/javascript">
+    function greter() {
+        let a = parseInt(prompt("Enter number of A:-"))
+        let b = parseInt(prompt("Enter number of B:-"))
+        let c = parseInt(prompt("Enter number of C:-"))
+        let d = parseInt(prompt("Enter number of D:-"))
+        let e = parseInt(prompt("Enter number of E:-"))
+        if (a >= b) {
+            if (a >= c) {
+                if (a >= d) {
+                    if (a >= e) {
+                        return ("A is Max")
+                    }
+                    else {
+                        return ("E is Max")
+                    }
+                } else {
+                    if (d >= e) {
+                        return ("D is Max")
+                    } else {
+                        return ("E is Max")
+                    }
+                }
+            } else {
+                if (c >= d) {
+                    return ("C is Max")
+                } else {
+                    if (d >= e) {
+                        return ("D is Max")
+                    }
+                    else {
+                        return ("E is Max")
+                    }
+                }
+            }
+        } else {
+            if (b >= c) {
+                if (b >= d) {
+                    if (b >= e) {
+                        return ("B is Max")
+                    }
+                    else {
+                        return ("E is Max")
+                    }
+                } else {
+                    if (d >= e) {
+                        return ("D is Max")
+                    } else {
+                        return ("E is Max")
+                    }
+                }
+            } else {
+                if (c >= d) {
+                    if (c >= e) {
+                        return ("C is Max")
+                    } else {
+                        return ("E is Max")
+                    }
+                } else {
+                    if (d >= e) {
+                        return ("D is Max")
+                    }
+                    else {
+                        return ("E is Max")
+                    }
+                }
+            }
+        }
+    }
+    let ans = greter();
+    document.write(ans)
+</script>

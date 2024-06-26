@@ -1,0 +1,71 @@
+<script type="text/javascript">
+    function greter() {
+        let a = parseInt(prompt("Enter number of A:-"))
+        let b = parseInt(prompt("Enter number of B:-"))
+        let c = parseInt(prompt("Enter number of C:-"))
+        let d = parseInt(prompt("Enter number of D:-"))
+        let e = parseInt(prompt("Enter number of E:-"))
+        if (a >= b) {
+            if (a >= c) {
+                if (a >= d) {
+                    if (a >= e) {
+                        document.write("A is Max")
+                    }
+                    else {
+                        document.write("E is Max")
+                    }
+                } else {
+                    if (d >= e) {
+                        document.write("D is Max")
+                    } else {
+                        document.write("E is Max")
+                    }
+                }
+            } else {
+                if (c >= d) {
+                    document.write("C is Max")
+                } else {
+                    if (d >= e) {
+                        document.write("D is Max")
+                    }
+                    else {
+                        document.write("E is Max")
+                    }
+                }
+            }
+        } else {
+            if (b >= c) {
+                if (b >= d) {
+                    if (b >= e) {
+                        document.write("B is Max")
+                    }
+                    else {
+                        document.write("E is Max")
+                    }
+                } else {
+                    if (d >= e) {
+                        document.write("D is Max")
+                    } else {
+                        document.write("E is Max")
+                    }
+                }
+            } else {
+                if (c >= d) {
+                    if (c >= e) {
+                        document.write("C is Max")
+                    } else {
+                        document.write("E is Max")
+                    }
+                } else {
+                    if (d >= e) {
+                        document.write("D is Max")
+                    }
+                    else {
+                        document.write("E is Max")
+                    }
+                }
+            }
+        }
+    }
+    greter();
+</script>

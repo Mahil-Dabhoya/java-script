@@ -1,0 +1,24 @@
+<script type="text/javascript">
+    function cal(val1, val2, val3) {
+        switch (val1) {
+            case '1':
+                return `${val2 + val3}`
+                break;
+            case '2':
+                return `${val2 - val3}`
+                break;
+            case '3':
+                return `${val2 * val3}`
+                break;
+            case '4':
+                return `${val2 / val3}`
+                break;
+            default:
+                return 0;
+        }
+    }
+    console.log(cal('1', 20, 10));
+    console.log(cal('2', 20, 10));
+    console.log(cal('3', 20, 10));
+    console.log(cal('4', 20, 10));
+</script>

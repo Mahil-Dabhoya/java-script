@@ -1,0 +1,25 @@
+<script type="text/javascript">
+    function cal() {
+        let a = parseInt(prompt("Enter number of A :-"))
+        let b = parseInt(prompt("Enter number of B :-"))
+        let value = prompt("Enter +,-,*,/ :-")
+        switch (value) {
+            case '+':
+                document.write(`${a + b}`)
+                break;
+            case '-':
+                document.write(`${a - b}`)
+                break;
+            case '*':
+                document.write(`${a * b}`)
+                break;
+            case '/':
+                document.write(`${a / b}`)
+                break;
+            default:
+                return 0;
+        }
+    }
+    cal()
+
+</script>
