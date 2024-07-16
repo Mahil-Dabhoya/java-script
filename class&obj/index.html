@@ -1,0 +1,20 @@
+<script type="text/javascript">
+
+    class Parent{
+        constructor(){
+            this.a=20;
+            this.b=10;
+        }
+    }
+
+    class Child extends Parent{
+        constructor(){
+            super()
+            console.log(this.a + this.b);
+        }
+    }
+
+    let p = new Parent();
+    let c = new Child();
+
+</script>
