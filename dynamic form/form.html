@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+
+    <section>
+        <div align="center">
+            <h2>Add User</h2>
+            <form>
+                Name : <input type="text" id="name">
+                Phone : <input type="text" id="phone">
+                <input type="button" onclick="saveRecord()" value="submit">
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <div align="center">
+            <h2>View User</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Srno</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody id="record"></tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <script type="text/javascript">
+        let data = [];
+        const viewRecored = () => {
+            let tbl = "";
+            data.map((val,index)=>{
+                return (
+                    tbl += `
+                                <tr>
+                                    <td>${++index}</td>
+                                    <td>${val.username}</td>
+                                    <td>${val.userphone}</td>
+                                </tr>
+                            `
+                )
+            })
+            document.getElementById('record').innerHTML = tbl
+        }
+        viewRecored();
+
+        const saveRecord = () => {
+            let name = document.getElementById('name').value;
+            let phone = document.getElementById('phone').value;
+            
+            if(!name || !phone){
+                alert("All field is required");
+                return false;
+            }
+
+            let obj = {
+                grid : Math.floor(Math.random() * 100000000),
+                username : name,
+                userphone : phone
+            }
+            data.push(obj);
+            document.getElementById('name').value = "";
+            document.getElementById('phone').value = "";
+            alert("user add");
+            viewRecored();
+        }
+
+        
+
+
+
+    </script>
+</body>
+
+</html>
