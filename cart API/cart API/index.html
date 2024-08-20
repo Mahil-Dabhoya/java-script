@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Time API</title>
+</head>
+
+<body>
+    <h2>World Time API</h2>
+    <p id="id"></p>
+    <p id="title"></p>
+    <p id="price"></p>
+    <p id="quantity"></p>
+    <p id="total"></p>
+    <p id="discountPercentage"></p>
+    <p id="discountedTotal"></p>
+    <p id="thumbnail"></p>
+
+    <button id="people" style="background-color: black; color: #fff; width: 160px; height: 50px; font-size: large;">
+        Random Clicks
+    </button>
+
+    <script>
+        // Sample data object
+        const carts = [
+            {
+                "id": 1,
+                "products": [
+                    {
+                        "id": 144,
+                        "title": "Cricket Helmet",
+                        "price": 44.99,
+                        "quantity": 4,
+                        "total": 179.96,
+                        "discountPercentage": 11.47,
+                        "discountedTotal": 159.32,
+                        "thumbnail": "https://cdn.dummyjson.com/products/images/sports-accessories/Cricket%20Helmet/thumbnail.png"
+                    }
+                ],
+                "total": 4794.8,
+                "discountedTotal": 4288.95,
+                "userId": 142,
+                "totalProducts": 5,
+                "totalQuantity": 20
+            },
+            {
+                "id": 2,
+                "products": [
+                    {
+                        "id": 200,
+                        "title": "Basketball",
+                        "price": 20.99,
+                        "quantity": 3,
+                        "total": 62.97,
+                        "discountPercentage": 10,
+                        "discountedTotal": 56.67,
+                        "thumbnail": "https://cdn.dummyjson.com/products/images/sports-accessories/Basketball/thumbnail.png"
+                    }
+                ],
+                "total": 1230.5,
+                "discountedTotal": 1107.45,
+                "userId": 145,
+                "totalProducts": 3,
+                "totalQuantity": 15
+            }
+        ];
+
+        // Function that handles displaying the data on button click
+        function celebrity() {
+            // Generate a random index to pick a random cart
+            let cartIndex = Math.floor(Math.random() * carts.length);
+            const selectedCart = carts[cartIndex];
+
+            // Choose a random product from the selected cart
+            let productIndex = Math.floor(Math.random() * selectedCart.products.length);
+            const selectedProduct = selectedCart.products[productIndex];
+
+            // Displaying the product's properties in respective elements
+            document.getElementById("id").innerHTML = "Product ID: " + selectedProduct.id;
+            document.getElementById("title").innerHTML = "Title: " + selectedProduct.title;
+            document.getElementById("price").innerHTML = "Price: $" + selectedProduct.price;
+            document.getElementById("quantity").innerHTML = "Quantity: " + selectedProduct.quantity;
+            document.getElementById("total").innerHTML = "Total: $" + selectedProduct.total;
+            document.getElementById("discountPercentage").innerHTML = "Discount Percentage: " + selectedProduct.discountPercentage + "%";
+            document.getElementById("discountedTotal").innerHTML = "Discounted Total: $" + selectedProduct.discountedTotal;
+            document.getElementById("thumbnail").innerHTML = `<img src="${selectedProduct.thumbnail}" alt="${selectedProduct.title} Thumbnail" />`;
+        }
+
+        // Adding event listener to the button to trigger the 'celebrity' function
+        document.getElementById("people").addEventListener('click', celebrity);
+    </script>
+</body>
+
+</html>
