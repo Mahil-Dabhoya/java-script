@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTRO</title>
+
+    <!-------------------------- FONTS LINK -------------------------------------->
+    <link rel="stylesheet" href="assets/css/fonts.css">
+
+    <!----------------------------- FONT AWESOME ICON ----------------------------------------->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <!--------------------- BOOTSTRAP FILE ------------------------->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!------------------ STYLE CSS FILE ---------------------->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-------------------- HEADER SECTION START ------------------------->
+
+   <header>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex">
+
+                <div class="col-6">
+
+                    <div class="icon">
+
+                        <i class="fa-solid fa-utensils"></i>  FOOD DELIGHT
+                       
+                    </div>
+
+                </div>
+
+     <!-------------------- HEADER SECTION END ------------------------->
+
+
+                <div class="col-6 d-flex justify-content-end">
+
+    <!---------------------------- OFFCANVAS ON CART SYMBOL START------------------------------------->
+
+                    <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+
+                        <i  class="fa-solid fa-cart-shopping" style="font-size: 25px; align-items: center;color: antiquewhite;"></i>
+                        <span id="count" style="color: antiquewhite">0</span>
+
+                    </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+
+                        <!-- OFFCANVAS HEADER -->
+                        <div class="mycart"> 
+                            
+                            <h2>ADD TO CART ITEMS</h2> 
+
+                        </div>
+                        <!-- OFFCANVAS HEADER -->
+
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                    </div>
+
+                      <div class="offcanvas-body">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="side"></div>
+
+                                <div class="side-bar">
+                                  
+                                    <div class="cartItem" id="cartItem"></div>
+                                   
+                                
+                                </div>
+
+                            </div>
+
+                        </div>
+                      </div>
+    <!---------------------------- OFFCANVAS ON CART SYMBOL END------------------------------------->
+
+
+
+ <!---------------------------- OFFCANVAS TOTAL ------------------------------------->
+
+                      <div class="footer">
+
+                        <h3>TOTAL :-</h3>
+                        <h2 id="FinalTotal"></h2>
+
+                      </div>
+ <!---------------------------- OFFCANVAS TOTAL ------------------------------------->
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+   </header>
+
+  
+<!----------------------- FLAVOURFUL FIESTA SECTION START ------------------>
+   <section>
+    <div class="container">
+        <div class="row">
+
+            <center><h2 style="padding-top: 60px!important;padding-bottom: 30px!important;">--------------- Flavorful Fiesta  --------------</h2></center>
+
+            <div class="col-12 d-flex flex-wrap" id="fiesta"></div>
+
+        </div>
+    </div>
+   </section>
+
+  
+<!--------------------- BOOTSTRAP FILE ------------------------>
+
+    <script src="assets/js/bootstrap.bundle.js"></script>
+   
+<!-------------------------- JAVASCRIP FILE ------------------------------->
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
