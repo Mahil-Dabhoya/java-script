@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Js</title>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-light " style="background-color:#7dcea0;">
+        <div class="container" >
+            <span class="navbar-brand mb-0 h1 text-white"><i class="fas fa-pen-square"></i>TODO APP</span>
+        </div>
+    </nav>
+
+
+   
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <div class="task-section">
+            <h4 class="mb-4">Add a Task</h4>
+            <div class="mb-3">
+                <textarea class="form-control" id="addedtext" placeholder="Enter your Task here..."></textarea><br>
+                <input type="date"id="date" ></input>
+            </div>
+            <div class="add-button">
+                <button class="btn  text-white" onclick="addbtn()"style="background-color:#7dcea0;">Add</button>
+            </div>
+        </div>
+        
+        <div class="mt-4">
+            <h4>Your Task</h4>
+            <div id="task"></div>
+            
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
